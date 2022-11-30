@@ -7,7 +7,7 @@ body{
 }
 
 .headerContainer{
-    background-color: var(--grey-500);
+    background-color: var(--grey-700);
 
     height: 380px;
     max-width: 100%;

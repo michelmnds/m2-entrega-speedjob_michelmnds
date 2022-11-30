@@ -4,6 +4,7 @@
 body{
     height: 120vh;
     width: 100vw;
+    background-color: var(--grey-100);
 }
 
 .headerContainer{
@@ -36,17 +37,16 @@ body{
     color: white;
 
     font-family: 'Inter', sans-serif;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 .containerBtn{
     display: flex;
     flex-direction: column;
-
 }
 .headerBtn{
     margin-bottom: 1.3rem;
 
-    width: 365px;
+    width: 300px;
 
     color: white;
     background-color: transparent;
@@ -75,7 +75,6 @@ main{
 
 .beContainer{
     margin-top: 6rem;
-    overflow-y: scroll;
 }
 .ulBack{
     margin-top: 3rem;
@@ -85,7 +84,10 @@ main{
     align-items: center;
     justify-content: center;
 
-    width: 282%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    max-width: 100%;
     
     gap: 0.75rem;
 }
@@ -94,6 +96,8 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    border-radius: 8px;
 
     gap: 0.75rem;
 
@@ -108,16 +112,15 @@ main{
 }
 
 
-.feContainer{
-    overflow-y: scroll;
-}
 .ulFront{
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
 
-    width: 282%;
+    overflow-x: scroll;
+
+    max-width: 100%;
     
     gap: 0.75rem;
 
@@ -130,6 +133,8 @@ main{
     justify-content: center;
 
     gap: 0.75rem;
+
+    border-radius: 8px;
 
     width: 300px;
     height: 240px;
@@ -212,6 +217,9 @@ main{
         overflow-x: hidden;
     }
 
+    .headerTxt{
+        font-size: 1rem;
+    }
     .containerBtn{
         display: flex;
         flex-direction: row;
@@ -228,11 +236,10 @@ main{
         padding: 0 8.5rem;
     }
     .mainTxt{
-        padding: 0px 24rem;
+        padding: 0px 0px;
     }
 
     .feContainer{
-        overflow-y: hidden;
         width: 100%;
     }
     .ulFront{
@@ -243,10 +250,10 @@ main{
         justify-content: center;
         margin: 0 auto;
         padding: 3rem 0;
+        overflow-x: hidden;
     }
 
     .beContainer{
-        overflow-y: hidden;
         width: 100%;
 
         margin-top: 0px
@@ -259,5 +266,6 @@ main{
         justify-content: center;
         margin: 0 auto;
         padding: 3rem 0;
+        overflow-x: hidden;
     }
 }
